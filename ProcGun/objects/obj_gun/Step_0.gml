@@ -29,4 +29,9 @@ if(flipped) {
 }
 
 
-
+if(!reloading && currentMag <= 0) {
+	show_debug_message("reloading");
+	reloading = true;
+	alarm[1] = reloadTime;
+	
+}

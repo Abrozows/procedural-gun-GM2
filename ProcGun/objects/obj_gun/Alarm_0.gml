@@ -10,4 +10,26 @@ instance_create_layer(x,y, "Instances",obj_bullet,
 	
 
 });
+
+if(shootsThree) {
+	instance_create_layer(x,y, "Instances",obj_bullet, 
+		{
+			speed: bulletSpeed,
+			direction: point_direction(x,y,mouse_x,mouse_y) - shootAngle,
+			isIncendiary: shootIncendiary,
+	
+
+	});
+	instance_create_layer(x,y, "Instances",obj_bullet, 
+		{
+			speed: bulletSpeed,
+			direction: point_direction(x,y,mouse_x,mouse_y) + shootAngle,
+			isIncendiary: shootIncendiary,
+	
+
+	});
+}
+
+currentMag--;
+
 canFire = true;

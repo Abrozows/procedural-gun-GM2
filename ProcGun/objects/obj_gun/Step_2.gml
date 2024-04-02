@@ -14,7 +14,11 @@ if(flipped) {
 	x += 7;
 }
 
-if(mouse_check_button(mb_left) && canFire) {
+
+if(!reloading && mouse_check_button(mb_left) && canFire) {
 	canFire = false;
 	alarm[0] = firespeed;
 }
+
+str_currentMag = string(currentMag);
+
