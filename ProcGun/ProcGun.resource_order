@@ -20,7 +20,10 @@
     {"name":"obj_bullet","order":2,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_gun","order":1,"path":"objects/obj_gun/obj_gun.yy",},
     {"name":"obj_Initializer","order":3,"path":"objects/obj_Initializer/obj_Initializer.yy",},
+    {"name":"spr_ar","order":4,"path":"sprites/spr_ar/spr_ar.yy",},
     {"name":"spr_bullet","order":2,"path":"sprites/spr_bullet/spr_bullet.yy",},
-    {"name":"spr_gun1","order":1,"path":"sprites/spr_gun1/spr_gun1.yy",},
+    {"name":"spr_incendiarybullet","order":5,"path":"sprites/spr_incendiarybullet/spr_incendiarybullet.yy",},
+    {"name":"spr_pistol","order":1,"path":"sprites/spr_pistol/spr_pistol.yy",},
+    {"name":"spr_smg","order":3,"path":"sprites/spr_smg/spr_smg.yy",},
   ],
 }
