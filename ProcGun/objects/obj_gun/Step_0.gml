@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 flipped = false;
+spawnx = 0;
+spawny = 0;
 
 if(object_exists(obj_player)) {
 
@@ -13,20 +15,22 @@ if(object_exists(obj_player)) {
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 
+
+
+
 if((image_angle > 90 && image_angle < 270)) {
 	flipped = true;
-	
 } else {
 	flipped = false;
 }
-
 if(flipped) {
 	image_angle -= 180;
 	image_xscale = -1;
-	x -= 7;
+
 } else {
 	image_xscale = 1;
 }
+
 
 
 if(!reloading && currentMag <= 0) {

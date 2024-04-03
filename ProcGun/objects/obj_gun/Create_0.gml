@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+bullet_width=sprite_get_width(spr_bullet)/2;
 
+isEquipped = false;
 
 canFire = true;
 reloading = false;
@@ -10,6 +12,11 @@ damage = 10;
 magazineSize = 0;
 currentMag = 0;
 reloadTime = 90;
+
+xadd = 0;
+yadd = 0;
+spawnx = 0;
+spawny = 0;
 
 rarity = irandom(3);
 
@@ -24,17 +31,23 @@ switch(speed_picker) {
 		firespeed = irandom_range(8,13);
 		damage = irandom_range(5, 15);
 		sprite_index = spr_smg;
+		xadd = 11;
+		yadd = 4;
 		magazineSize = 45;
 		break;
 	case 1:
 		firespeed = irandom_range(17, 25)
 		damage = irandom_range(15, 30);
+		xadd = 6;
+		yadd = 3;
 		magazineSize = 20;
 		break;
 	case 2:
 		firespeed = irandom_range(40, 50);
 		damage = irandom_range(50,70)
 		sprite_index = spr_ar;
+		xadd = 17;
+		yadd = 3;
 		magazineSize = 12;
 		break;
 }	

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-instance_create_layer(x,y, "Instances",obj_bullet, 
+instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
 {
 	speed: bulletSpeed,
 	direction: point_direction(x,y,mouse_x,mouse_y),
@@ -12,7 +12,7 @@ instance_create_layer(x,y, "Instances",obj_bullet,
 });
 
 if(shootsThree) {
-	instance_create_layer(x,y, "Instances",obj_bullet, 
+	instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
 		{
 			speed: bulletSpeed,
 			direction: point_direction(x,y,mouse_x,mouse_y) - shootAngle,
@@ -20,7 +20,7 @@ if(shootsThree) {
 	
 
 	});
-	instance_create_layer(x,y, "Instances",obj_bullet, 
+	instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
 		{
 			speed: bulletSpeed,
 			direction: point_direction(x,y,mouse_x,mouse_y) + shootAngle,
