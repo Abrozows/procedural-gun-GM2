@@ -11,7 +11,7 @@ firespeed = 15;
 damage = 10;
 magazineSize = 0;
 currentMag = 0;
-reloadTime = 90;
+reloadTime = 120;
 
 xadd = 0;
 yadd = 0;
@@ -19,6 +19,8 @@ spawnx = 0;
 spawny = 0;
 
 rarity = irandom(3);
+
+spread = 0;
 
 shootIncendiary = false;
 shootsThree = false;
@@ -31,16 +33,19 @@ switch(speed_picker) {
 		firespeed = irandom_range(8,13);
 		damage = irandom_range(5, 15);
 		sprite_index = spr_smg;
+		spread = irandom_range(6,9);
 		xadd = 11;
 		yadd = 4;
-		magazineSize = 45;
+		magazineSize = 20;
 		break;
 	case 1:
 		firespeed = irandom_range(17, 25)
 		damage = irandom_range(15, 30);
+		spread = 2;
 		xadd = 6;
 		yadd = 3;
-		magazineSize = 20;
+		spread = irandom_range(3,6);
+		magazineSize = 12;
 		break;
 	case 2:
 		firespeed = irandom_range(40, 50);
@@ -48,7 +53,8 @@ switch(speed_picker) {
 		sprite_index = spr_ar;
 		xadd = 17;
 		yadd = 3;
-		magazineSize = 12;
+		spread = irandom_range(0,4);
+		magazineSize = 6;
 		break;
 }	
 
@@ -75,7 +81,7 @@ for(i = 0; i < rarity; i++) {
 		case 3: 
 			shootsThree = true;
 		case 4: 
-			magazineSize *= 2;
+			magazineSize *= 1.5;
 	}
 	
 	
