@@ -49,7 +49,7 @@ switch(speed_picker) {
 		break;
 	case 2:
 		firespeed = irandom_range(40, 50);
-		damage = irandom_range(50,70)
+		damage = irandom_range(50,70); 
 		sprite_index = spr_ar;
 		xadd = 17;
 		yadd = 3;

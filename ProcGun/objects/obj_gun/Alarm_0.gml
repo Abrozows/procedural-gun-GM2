@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var randomSpread = spread/2 - irandom_range(0, spread/2);  
-var randomSpread2 = spread/2 - irandom_range(0, spread/2); 
-var randomSpread3 = spread/2 - irandom_range(0, spread/2); 
+var randomSpread = spread/2 - irandom_range(0, spread);  
+var randomSpread2 = spread/2 - irandom_range(0, spread); 
+var randomSpread3 = spread/2 - irandom_range(0, spread); 
 
 instance_create_layer(spawnx,spawny, "Instances",obj_bullet, 
 {
